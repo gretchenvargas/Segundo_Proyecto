@@ -1,77 +1,69 @@
-# 📊 Análisis de Experimento A/B en Aplicación Móvil
+# 📊 Mobile App A/B Test Analysis
 
-Este proyecto analiza los resultados de un experimento A/B realizado en una aplicación móvil para evaluar el impacto de cambios en la interfaz sobre el comportamiento de los usuarios.
+This project analyzes the results of an A/B experiment conducted on a mobile application to evaluate the impact of interface changes on user behavior.
 
-El estudio se basa en registros de eventos y busca determinar si las modificaciones implementadas generan mejoras significativas en la conversión.
-
----
-
-## 📁 Contenido del Proyecto
-
-- `Segundo_Proyecto.ipynb` → Análisis completo en Jupyter Notebook  
-- `logs_exp_us.csv` → Dataset del experimento (no incluido)
+The study is based on event logs and seeks to determine if the implemented modifications generate significant improvements in conversion rates.
 
 ---
 
-## 🎯 Objetivo
+## 📁 Project Content
 
-El objetivo principal es:
-
-- Analizar el comportamiento de los usuarios en un experimento A/B.
-- Comparar grupos de control y grupo de prueba.
-- Evaluar embudos de conversión.
-- Validar estadísticamente los resultados.
-- Determinar si los cambios implementados son efectivos.
+- `Segundo_Proyecto.ipynb` → Complete analysis in a Jupyter Notebook  
+- `logs_exp_us.csv` → Experiment dataset (not included)
 
 ---
 
-## 🧹 Preparación de Datos
+## 🎯 Objective
 
-Durante el análisis se realizaron las siguientes tareas:
+The main objectives are:
 
-- Renombrado de columnas.
-- Conversión de timestamps a formato de fecha.
-- Creación de variables temporales.
-- Verificación de valores nulos y duplicados.
-- Limpieza y validación de registros.
-
----
-
-## 📈 Análisis Realizado
-
-El proyecto incluye:
-
-- Exploración inicial de los datos.
-- Análisis de volumen de eventos por grupo.
-- Estudio del comportamiento de usuarios.
-- Construcción del embudo de conversión.
-- Comparación entre grupos.
-- Visualizaciones con Matplotlib.
+- **Analyze user behavior** within an A/B testing framework.
+- **Compare control groups** against the test group.
+- **Evaluate conversion funnels** to identify drop-off points.
+- **Statistically validate** the experiment results.
+- **Determine effectiveness** of the implemented interface changes.
 
 ---
 
-## 🧪 Pruebas de Hipótesis
+## 🧹 Data Preparation
 
-Se aplicaron pruebas estadísticas para evaluar diferencias entre grupos:
+During the analysis, the following tasks were performed:
 
-- Comparación de tasas de conversión.
-- Pruebas de significancia estadística.
-- Análisis de proporciones.
-- Validación de resultados con nivel de confianza.
-
-Ejemplos de hipótesis evaluadas:
-
-- No existen diferencias entre los grupos.
-- El grupo experimental mejora la conversión.
-- El cambio en la interfaz impacta el comportamiento.
+- **Column Renaming:** Standardizing headers for clarity.
+- **Timestamp Conversion:** Transforming raw data into date/time formats.
+- **Feature Engineering:** Creating time-based variables.
+- **Data Integrity:** Handling null values and removing duplicates.
+- **Validation:** Cleaning logs to ensure consistent records.
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 📈 Analysis Performed
 
-- Python  
-- Pandas  
-- NumPy  
-- Matplotlib  
-- SciPy  
-- Jupyter Notebook  
+- **Exploratory Data Analysis (EDA):** Initial data discovery.
+- **Event Volume:** Measuring event frequency per group.
+- **User Behavior:** Tracking user interactions.
+- **Conversion Funnel:** Visualizing the journey from start to finish.
+- **Visualizations:** Custom charts using Matplotlib.
+
+---
+
+## 🧪 Hypothesis Testing
+
+Statistical tests were applied to evaluate differences between groups:
+
+- **Proportion Tests:** Comparing conversion rates between groups.
+- **Statistical Significance:** Assessing p-values and confidence levels.
+- **Multiple Testing:** Ensuring validity when comparing multiple groups (A/A/B).
+
+**Key Hypotheses:**
+- Is there a significant difference between the control groups (A/A)?
+- Does the experimental group (B) outperform the control groups in conversion?
+
+---
+
+## 🛠️ Technologies Used
+
+- **Python** (Pandas, NumPy)
+- **Visualization:** Matplotlib, Seaborn
+- **Statistics:** SciPy
+- **Environment:** Jupyter Notebook
